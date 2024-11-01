@@ -1,0 +1,1 @@
+Scythron is a ROBLOX script that I am working on, it has yet to have any power, as its power is only worth a simple GUI, but this is only in beta version right now, i haven't finished any of the supported games (or even begun with them)
