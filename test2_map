@@ -1,0 +1,27 @@
+-- Replace with the asset ID of the model you want to load from the toolbox
+local assetId = "rbxassetid://80777708217081"
+
+-- Load the asset from the asset ID using GetObjects
+local loadedAsset = game:GetObjects(assetId)[1]  -- Gets the first object in the returned array
+
+if loadedAsset then
+    -- Parent it to the workspace so it's visible
+    loadedAsset.Parent = game.StarterGui
+    
+    -- Set an initial position
+    loadedAsset:SetPrimaryPartCFrame(CFrame.new(Vector3.new(0, 10, 0)))
+
+    -- Function to update the position of the loaded asset
+    local function setPosition(x, y, z)
+        if loadedAsset.PrimaryPart then
+            loadedAsset:SetPrimaryPartCFrame(CFrame.new(Vector3.new(x, y, z)))
+        else
+            warn("Loaded asset does not have a PrimaryPart.")
+        end
+    end
+
+    -- Example usage to change position
+      -- Move the model to new coordinates (20, 15, 30)
+else
+    warn("Failed to load asset. Please check the asset ID.")
+end
