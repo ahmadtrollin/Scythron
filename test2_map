@@ -1,5 +1,5 @@
 -- Replace with the asset ID of the model you want to load from the toolbox
-local assetId = "rbxassetid://80777708217081"
+local assetId = "rbxassetid://81160478654036"
 
 -- Load the asset from the asset ID using GetObjects
 local loadedAsset = game:GetObjects(assetId)[1]  -- Gets the first object in the returned array
