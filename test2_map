@@ -6,7 +6,7 @@ local loadedAsset = game:GetObjects(assetId)[1]  -- Gets the first object in the
 
 if loadedAsset then
     -- Parent it to the workspace so it's visible
-    loadedAsset.Parent = game.StarterGui
+    loadedAsset.Parent = workspace
     
    
 end
